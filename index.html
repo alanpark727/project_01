@@ -14,8 +14,21 @@
     <link rel="stylesheet" href="css/main_section.css">
 
     <!-- Script 파일 -->
-    <script src=""></script>
-
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
+    <script>$(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('#reset_arrow').fadeIn();
+                } else {
+                    $('#reset_arrow').fadeOut();
+                }
+            });
+            $('#reset_arrow').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 400);
+                return false;
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -218,7 +231,8 @@
                     </a>
                     <a href="sub_2.html">
                         <p class="price">&#92;154,100</p>
-                    </a><br><a href="sub_2.html"><img src="img/circle_choice.png" alt="circle_choice" class="circle_choice"></a>
+                    </a><br><a href="sub_2.html"><img src="img/circle_choice.png" alt="circle_choice"
+                            class="circle_choice"></a>
                 </li>
                 <li>
                     <a href="sub.html" class="itembox"><img src="img/Thinkcentre_m90Q.png" alt="Thinkcentre"
@@ -228,11 +242,13 @@
                     </a>
                     <a href="sub.html">
                         <p class="price">&#92;855,500</p>
-                    </a><br><a href="sub.html"><img src="img/circle_choice.png" alt="circle_choice" class="circle_choice"></a>
+                    </a><br><a href="sub.html"><img src="img/circle_choice.png" alt="circle_choice"
+                            class="circle_choice"></a>
                 </li>
                 <li>
-                    <a href="sub_2.html" class="itembox"><img src="img/Tab_m10.png" alt="tab" class="p_image four"></a><a
-                        href="sub_2.html"><img src="img/5_Star.png" alt="5_star" class="stars"><span>(32)</span></a>
+                    <a href="sub_2.html" class="itembox"><img src="img/Tab_m10.png" alt="tab"
+                            class="p_image four"></a><a href="sub_2.html"><img src="img/5_Star.png" alt="5_star"
+                            class="stars"><span>(32)</span></a>
                     <a href="sub_2.html">
                         <p>Tab M10 LTE+WIFI (3rd Gen)</p>
                     </a>
@@ -246,8 +262,8 @@
                     <a href="sub.html" class="itembox"><img src="img/Lenovo_go_speaker.png" alt="speaker"
                             class="p_image five"></a><br>
                     <p>Lenovo Go 유선 스피커폰</p>
-                    <p class="price">&#92;133,200</p><br><a href="sub.html"><img src="img/circle_choice.png" alt="circle_choice"
-                            class="circle_choice"></a>
+                    <p class="price">&#92;133,200</p><br><a href="sub.html"><img src="img/circle_choice.png"
+                            alt="circle_choice" class="circle_choice"></a>
                 </li>
                 <li>
                     <a href="sub.html" class="itembox"><img src="img/Legion_mouse.png" alt="Legion_mouse"
@@ -257,7 +273,8 @@
                     </a>
                     <a href="sub_2.html">
                         <p class="price">&#92;115,000</p>
-                    </a><br><a href="sub_2.html"><img src="img/circle_choice.png" alt="circle_choice" class="circle_choice"></a>
+                    </a><br><a href="sub_2.html"><img src="img/circle_choice.png" alt="circle_choice"
+                            class="circle_choice"></a>
                 </li>
                 <li>
                     <a href="sub.html" class="itembox"><img src="img/H600_headphone.png" alt="h600"
@@ -278,7 +295,8 @@
                     </a>
                     <a href="sub_2.html">
                         <p class="price">&#92;1,099,000</p>
-                    </a><br><a href="sub_2.html"><img src="img/circle_choice.png" alt="circle_choice" class="circle_choice"></a>
+                    </a><br><a href="sub_2.html"><img src="img/circle_choice.png" alt="circle_choice"
+                            class="circle_choice"></a>
                 </li>
             </ul>
         </figure>
