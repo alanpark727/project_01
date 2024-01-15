@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/* 슬라이더2 CSS */
+
+/* 중간 슬라이더 */
+.slider2 {
+    width: 1200px;
+    height: 470px;
+    background-color: #f2f4fb;
+    margin: 0 auto;
+}
+
+#slider_content_2 {
+    width: 100%;
+}
+
+#slider_content_2>p {
+    font-family: 'HakgyoansimGodeunjemokB';
+    font-size: 42pt;
+    text-align: left;
+    max-width: fit-content;
+    position: relative;
+    top: 80px;
+    left: 80px;
+}
+
+#slider_content_2>img {
+    width: 770px;
+    position: relative;
+    float: left;
+    bottom: 370px;
+    left: 490px;
+}
+
+/* 원형 스펙 표기 파트 */
+.t_circle ul p {
+    font-family: 'HakgyoansimGodeunjemokB';
+    font-size: 18px;
+    background-color: white;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0 0 30px;
+    width: 70px;
+    top: 80px;
+    left: -730px;
+}
+
+.t_circle li {
+    float: left;
+}
+
+/* Check it out 버튼 */
+#slider_content_2>a {
+    font-family: "Caprasimo";
+    background-color: #3676fe;
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+    border: 0;
+    border-radius: 15px;
+    width: 170px;
+    padding: 20px 5px;
+    position: relative;
+    text-align: center;
+    top: 110px;
+    left: -700px;
+}

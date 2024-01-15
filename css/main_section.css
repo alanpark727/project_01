@@ -1,0 +1,249 @@
+@charset "utf-8";
+
+/* 메인 섹션 CSS */
+
+/* 상품 리스트 섹션 */
+#section_2 {
+    width: 1200px;
+    height: 1300px;
+    margin: 0 auto;
+}
+
+.featured {
+    color: #82779a;
+    font-size: 18px;
+    text-shadow: 0 0 2px #333;
+    font-family: "BMJUA";
+    float: left;
+    position: absolute;
+    top: 1865px;
+}
+
+.featured>img {
+    max-width: 30px;
+    position: relative;
+    top: 10px;
+}
+
+/* 메인 타이틀 */
+#section_2 .fea_title h4 {
+    font-family: 'GmarketSansMedium';
+    font-size: 44px;
+    position: absolute;
+    text-align: left;
+    max-width: fit-content;
+    top: 1910px;
+}
+
+/* 화살표 버튼 */
+.s2_arrow img {
+    max-width: 40px;
+    float: left;
+    position: relative;
+    margin: 0 5px;
+    top: 70px;
+    right: -330px;
+}
+
+/* 메인 제품 목록 */
+#product_list {
+    width: 1200px;
+    height: 1140px;
+    margin: 0 auto;
+    position: absolute;
+    top: 1980px;
+}
+
+#product_list #upper_product li {
+    display: inline-block;
+    width: 290px;
+    height: 400px;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    left: 5px;
+}
+
+#product_list li:nth-of-type(1) {
+    margin: 0 0 0 0px;
+}
+
+#product_list li:nth-of-type(2) {
+    margin: 0 0 0 5px;
+}
+
+#product_list li:nth-of-type(3) {
+    margin: 0 0 0 5px;
+}
+
+#product_list li:nth-of-type(4) {
+    margin: 0 0 0 5px;
+}
+
+/* 리뷰표시 별 */
+#product_list .stars {
+    max-width: 80px;
+    position: relative;
+    display: inline-block;
+    top: 15px;
+    left: 10px;
+}
+
+/* 하단 이미지 전환 바(장식) */
+#product_list .circle_choice {
+    max-width: 90px;
+    position: relative;
+    top: -10px;
+    left: 5px;
+}
+
+#product_list p {
+    font-family: "NanumSquareRound";
+    margin-top: 15px;
+    margin-left: 10px;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#product_list .price {
+    font-size: 22px;
+}
+
+#product_list span {
+    font-family: "NanumSquareRound";
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 15px;
+    position: relative;
+    top: 7px;
+}
+
+#product_list a {
+    color: #000;
+}
+
+/* 내부 상품 이미지 */
+#product_list .itembox {
+    width: 280px;
+    height: 280px;
+    display: inline-block;
+    background-color: #f2f4fb;
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+
+#upper_product .p_image {
+    max-width: 250px;
+    position: relative;
+}
+
+#upper_product .one {
+    top: 40px;
+    left: 15px;
+}
+
+#upper_product .two {
+    top: 70px;
+    left: 15px;
+}
+
+#upper_product .three {
+    top: 15px;
+    left: 15px;
+}
+
+#upper_product .four {
+    top: -5px;
+    left: 20px;
+}
+
+/* 하단부 메인제품 파트 */
+#product_list #lower_product li {
+    display: inline-block;
+    width: 290px;
+    height: 400px;
+    margin-top: 50px;
+    overflow: hidden;
+    position: relative;
+    left: 5px;
+}
+
+#lower_product .p_image {
+    max-width: 250px;
+    position: relative;
+}
+
+#lower_product .five {
+    top: 30px;
+    left: 15px;
+}
+
+#lower_product .six {
+    top: 10px;
+    left: 15px;
+}
+
+#lower_product .seven {
+    top: 10px;
+    left: 25px;
+    height: 250px;
+}
+
+#lower_product .eight {
+    top: 70px;
+    left: 15px;
+}
+
+#details {
+    display: inline-block;
+}
+
+/* 최하단 더 많은 제품보기 버튼 */
+#section_2>a {
+    display: inline-block;
+    background-color: #f2f4fb;
+    padding: 25px 50px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    top: 1100px;
+    right: 400px;
+    font-family: "GmarketSansMedium";
+}
+
+/* 할인표시 */
+.sale {
+    color: white;
+    background-color: #3676fe;
+    font-family: "BMJUA";
+    font-size: 16px;
+    width: 70px;
+    height: 28px;
+    float: left;
+    position: relative;
+    text-align: center;
+    padding: 5px;
+}
+
+.off_one {
+    top: 100px;
+    left: 360px;
+}
+
+.off_two {
+    top: 560px;
+    left: -610px;
+}
+
+.off_three {
+    top: 560px;
+    left: -380px;
+}
+
+.off_four {
+    top: 560px;
+    left: -150px;
+}

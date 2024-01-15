@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LENOVO_SubPage_2</title>
+
+    <!-- CSS 파일 -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub_2.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(function () {
+            $('.thumbnail:nth-of-type(1)').click(function () {
+                $('#img_1').fadeIn();
+                $('#img_2').hide();
+                $('#img_3').hide();
+                $('#img_4').hide();
+            });
+            $('.thumbnail:nth-of-type(2)').click(function () {
+                $('#img_2').fadeIn();
+                $('#img_1').hide();
+                $('#img_3').hide();
+                $('#img_4').hide();
+            });
+            $('.thumbnail:nth-of-type(3)').click(function () {
+                $('#img_3').fadeIn();
+                $('#img_1').hide();
+                $('#img_2').hide();
+                $('#img_4').hide();
+            });
+            $('.thumbnail:nth-of-type(4)').click(function () {
+                $('#img_4').fadeIn();
+                $('#img_1').hide();
+                $('#img_2').hide();
+                $('#img_3').hide();
+            });
+            $('#product_option').change(function () {
+                var result = $('#product_option option:selected').val();
+                if (result == '1') {
+                    $('#totalprice_1').show();
+                    $('#totalprice_2').hide();
+                };
+                if (result == '2') {
+                    $('#totalprice_2').show();
+                    $('#totalprice_1').hide();
+                } else {
+                    $('#totalprice_1').show();
+                    $('#totalprice_2').hide();
+                };
+            });
+        });
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('#reset_arrow').fadeIn();
+                } else {
+                    $('#reset_arrow').fadeOut();
+                }
+            });
+            $('#reset_arrow').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 400);
+                return false;
+            });
+        });
+        $(function () {
+            $('.spec_table').click(function () {
+                if ($('.open_table').hasClass('more')) {
+                    $('.open_table').removeClass('more');
+                    $('.fold_table').addClass('more');
+                    $('.table02').fadeIn();
+                    $('.table03').fadeIn();
+                    $('.table04').fadeIn();
+                    $('.table05').fadeIn();
+                } else if ($('.fold_table').hasClass('more')) {
+                    $('.fold_table').removeClass('more');
+                    $('.open_table').addClass('more');
+                    $('.table02').hide();
+                    $('.table03').hide();
+                    $('.table04').hide();
+                    $('.table05').hide();
+                };
+            });
+        });
+        $(function () {
+            $('.acc_more').click(function () {
+                if ($('.open_acc').hasClass('more')) {
+                    $('.open_acc').removeClass('more');
+                    $('.fold_acc').addClass('more');
+                    $('.acc_textbox').fadeIn();
+                } else if ($('.fold_acc').hasClass('more')) {
+                    $('.fold_acc').removeClass('more');
+                    $('.open_acc').addClass('more');
+                    $('.acc_textbox').hide();
+                };
+            });
+        });
+
+
+    </script>
+
+    <style>
+    </style>
+
+</head>
+
+<body>
+    <!-- 탑메뉴 -->
+    <div id="tophead">
+        <p><a href="">Last Chance Deals! Save up to 78% off. Shop Now ></a></p>
+    </div>
+
+    <!-- 헤더 -->
+    <header>
+        <div id="login">
+            <div id="home">
+                <ul>
+                    <li><a href="../project1/index.html">Home <img src="img/button2.png" alt="button"></a></li>
+                    <li><a href="">Business <img src="img/button2.png" alt="button"></a></li>
+                </ul>
+            </div>
+            <div id="register">
+                <ul>
+                    <li><a href="">wishlist</a></li>
+                    <li><a href="">register</a></li>
+                    <li><a href="">log in</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="logo"><a href="../project1/index.html"><img src="img/Lenovo_logo.png" alt="logo"></a>
+            <nav id="FLDSAS">
+                <ul class="mainmenu">
+                    <li><a href="">Featured</a>
+                        <ul class="submenu">
+                            <li><a href="">New Arrival</a></li>
+                            <li><a href="">Best Seller</a></li>
+                            <li><a href="">Steady Seller</a></li>
+                            <li><a href="">SALE</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Laptop</a>
+                        <ul class="submenu">
+                            <li><a href="">Product</a></li>
+                            <li><a href="">Performance</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Device</a>
+                        <ul class="submenu">
+                            <li><a href="">Product</a></li>
+                            <li><a href="">Archtecture</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Server</a>
+                        <ul class="submenu">
+                            <li><a href="">Product</a></li>
+                            <li><a href="">Archtecture</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Accessories</a>
+                        <ul class="submenu">
+                            <li><a href="">Headphone</a></li>
+                            <li><a href="">Mouse</a></li>
+                            <li><a href="">Keyboard</a></li>
+                            <li><a href="">Speaker</a></li>
+                            <li><a href="">Bags</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Support</a>
+                        <ul class="submenu">
+                            <li><a href="">Warranty Lookup</a></li>
+                            <li><a href="">Data Center Services</a></li>
+                            <li><a href="">PC Services</a></li>
+                            <li><a href="">Solutions</a></li>
+                            <li><a href="">Support</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav id="user">
+                <div class="icon"><a href=""><img src="img/icon/search.png" alt="search"></a></div>
+                <div class="icon"><a href=""><img src="img/icon/heart.png" alt="heart"></a></div>
+                <div class="icon"><a href=""><img src="img/icon/shopping_cart.png" alt="cart"></a></div>
+                <div class="icon"><a href=""><img src="img/icon/member.png" alt="member"></a></div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main_Wrap">
+        <hr>
+        <div id="upper_subPage">
+            <nav id="upper_Menu">
+                <ul>
+                    <li><a href="project.html">홈</a></li>
+                    <li><a href="">Laptop</a></li>
+                    <li><a href="">Legion</a></li>
+                    <li><a href="">Legion Pro Series</a></li>
+                    <li><a href="">Legion Pro 5(16",Gen 8)</a></li>
+                </ul>
+            </nav>
+            <div id="title_Box">
+                <h3>Legion Pro 5<br>(16",Gen 8)</h3>
+                <img src="img/5_Star.png" alt="stars"><span>5.0(23)</span>
+                <h4>비교 불가한 AI 튜닝 성능</h4>
+                <ul id="product_spec_1">
+                    <li>최대 Windows 11 Pro</li>
+                    <li>레노버 AI Engine+의 AI 튜닝 성능으로 더 스마트하게 전투</li>
+                    <li>강력한 AMD Ryzen™ 7000 시리즈 모바일 프로세서 및 NVIDIA<sup>®</sup>GeForce RTX™ 그래픽</li>
+                    <li>e스포츠를 지원하는 빠른 SSD 스토리지 및 DDR5 메모리</li>
+                    <li>최적의 게이밍 온도 제어를 위한 Legion ColdFront 5.0 냉각 기술</li>
+                    <li>정밀도 높은 키보드 및 가변 주사율이 적용된 16″ 16:10 WQXGA 디스플레이</li>
+                </ul>
+            </div>
+            <br>
+            <br>
+            <div id="product_price_box">
+                <h2 id="totalprice_1">&#92; 1,725,100</h2>
+                <br>
+                <p><strong>Lenovo Pro</strong> | 추가 8% 할인 적용*</p>
+            </div>
+            <div class="purchasewrap">
+                <select name="product_option" id="product_option">
+                    <option value="0">제품 선택</option>
+                    <option value="1">Legion Pro 5 (16",Gen 8)</option>
+                </select>
+                <div class="purchase">
+                    <a href="" class="shopping_cart">
+                        <div>장바구니</div>
+                    </a>
+                    <a href="" class="focus_item">
+                        <div>찜하기</div>
+                    </a>
+                    <a href="" class="make_purchase">
+                        <div>구매하기</div>
+                    </a>
+                </div>
+            </div>
+            <div id="product_img_part">
+                <div class="product_img" id="img_1">
+                    <img src="img/Legion_pro5.png" alt="LegionPro">
+                </div>
+                <div class="product_img" id="img_2">
+                    <img src="img/LP01.png" alt="LegionPro_01">
+                </div>
+                <div class="product_img" id="img_3">
+                    <img src="img/LP02.png" alt="LegionPro_02">
+                </div>
+                <div class="product_img" id="img_4">
+                    <img src="img/LP03.png" alt="LegionPro_03">
+                </div>
+                <div class="imgbox2">
+                    <div class="thumbnail">
+                        <img src="img/Legion_pro5.png" alt="LegionPro_main">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="img/LP01.png" alt="LegionPro_01">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="img/LP02.png" alt="LegionPro_02">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="img/LP03.png" alt="LegionPro_03">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banners">
+            <div class="ad_banner ad_busi">
+                <h3>Lenovo Pro for Business</h3>
+                <p>Lenovo Pro 회원 가입시 웰컴 쿠폰 증정!<br>30일 이내 320만원 이상 구매시 레노버 ThinkVision C24-40 23.8"모니터 OR Lenovo Go USB-C
+                    노트북 보조 배터리 (20000mAh) 혜택!</p>
+                <button>회원가입</button>
+            </div>
+        </div>
+        <div id="subWrap">
+            <div>
+                <nav id="sub_Information">
+                    <div id="pro_sub_menu">
+                        <a href="#sub_Information">
+                            <div>상품정보</div>
+                        </a>
+                        <a href="#rev_sub_menu">
+                            <div>상품후기</div>
+                        </a>
+                        <a href="#qna_sub_menu">
+                            <div>문의사항</div>
+                        </a>
+                        <a href="#ship_sub_menu">
+                            <div>배송/교환/반품/AS안내</div>
+                        </a>
+                    </div>
+                </nav>
+                <div id="product_Information">
+                    <div class="product_imgbox"><img src="img/product_2_01.png" alt="0201"></div>
+                    <div class="product_textbox">
+                        <h3>AMD Ryzen™ 프로세서가 탑재되어 속도와 내구성이 좋은 제품</h3>
+                        <p>AMD Ryzen™ 프로세서가 탑재되어 게이밍 노트북으로 게임을 할 때 속도와 내구성을 실현해 줍니다 배터리 수명에 영향을 받지 않고 승리하는 데 필요한 제품 본연의
+                            성능을 최대한 활용하세요.</p>
+                    </div>
+                    <div class="product_imgbox">
+                        <img src="img/product_2_02.png" alt="0202">
+                    </div>
+                    <div class="product_textbox">
+                        <h3>완전히 구동되는 NVIDIA®GeForce RTX™ 그래픽 카드. 빠름, 그 이상.</h3>
+                        <p>NVIDIA<sup>®</sup>GeForce RTX™ 40 시리즈 GPU는 게이머와 크리에이터에게 빠른 속도 그 이상을 제공합니다. 초고효율 NVIDIA Ada
+                            Lovelace 아키텍처를 기반으로 하여 성능과 AI 기반 그래픽의 비약적인 향상을 경험할 수 있습니다. 지연 시간이 가장 짧은 초고속 FPS 게임과 레이
+                            트레이싱으로
+                            생생한 가상 세계를 체험하세요. 워크플로를 전례 없이 빠르게 만들어주는 새롭고 혁신적인 방법을 알아보세요.</p>
+                    </div>
+                    <div class="product_imgbox">
+                        <img src="img/product_2_03.png" alt="0203">
+                    </div>
+                    <div class="product_textbox">
+                        <h3>레노버 Legion 장치에서 Xbox Game Pass 3개월 이용 가능</h3>
+                        <p>새로운 레노버 Legion 노트북과 EA Play가 포함된 Xbox Game Pass 3개월 이용권으로 100개 이상의 고품질 게임을 플레이하세요. 게임이 계속
+                            추가되어 늘 새로운 게임을 만날 수 있습니다. 다운로드하여 완전한 충실도로 플레이하거나 연결된 컨트롤러로 클라우드에서 콘솔 게임을 플레이할 수 있습니다. 참고:<a
+                                href="https://www.xbox.com/en-US/legal/subscription-terms">xbox.com/subscriptionterms</a></p>
+                    </div>
+                    <div class="product_imgbox">
+                        <img src="img/product_2_04.png" alt="0204">
+                    </div>
+                    <div class="product_textbox">
+                        <h3>더 스마트한 게이밍. 더 빠른 프레임 속도. 레노버 AI Engine+</h3>
+                        <p>최신 레노버 AI Engine+를 지원하는 혁신적인 AI LA1 칩으로 게임 경험의 잠재력을 최대로 끌어올리세요. 다양한 시스템 센서가 장착된 이 Smart
+                            Engine은 게임을 실시간으로 최적화하여 최대의 FPS를 지원합니다. 시간이 지날수록 더욱 좋아지는 성능을 통해 게임은 물론 다른 작업에서도 경쟁 우위를 점할 수
+                            있도록 해줍니다. Smart Engine은 장치 구매 후에도 수년 동안 최대한의 성능을 보장합니다.</p>
+                    </div>
+                    <div class="product_imgbox">
+                        <img src="img/product_2_05.png" alt="0205">
+                    </div>
+                    <div class="product_textbox">
+                        <h3>최상급의 발열 관리 기술</h3>
+                        <p>고급 발열 관리 기술로 최적의 냉각 성능을 제공하는 Legion ColdFront 5.0을 통해 게이밍 게임에서 앞서나가세요. Legion Pro 5 Gen 8
+                            노트북은 상변화 열 컴파운드와 3D 팬 블레이드를 갖춘 최첨단 팬 시스템으로 더할 나위 없이 부드럽게 작동합니다. 대형 하이브리드 열 파이프 흡기 및 배기 시스템은
+                            가장 까다로운 게임과 소프트웨어에서도 강력한 열 효율성과 성능을 제공합니다. 총 전력이 200W인 이 장치는 궁극의 게임 경험을 뒷받침하기 위한 진정한 성능을
+                            제공합니다.</p>
+                    </div>
+                    <div class="product_imgbox">
+                        <img src="img/product_2_06.png" alt="0206">
+                    </div>
+                    <div class="product_textbox">
+                        <h3>디스플레이의 힘</h3>
+                        <p>최첨단 레노버 PureSight Gaming 디스플레이에서 적을 빠르게 인식할 수 있습니다. 이제 X-Rite Pantone<sup>®</sup>인증을 받았고 보정된
+                            상태로 출고됩니다. Legion Pro 5 Gen 8 노트북의 가변 주사율과 함께 16″ WQXGA에 16:10의 화면 비율과 IPS 디스플레이가 장착되어 있어 큰
+                            화면, 빠른 반응 속도, 정확한 조준이 가능한 완벽한 게이밍 노트북입니다. 디스플레이 표면적의 93.08%를 차지하는 화면으로 좋아하는 게임과 창작물에 몰입할 수
+                            있습니다. 또한 일부 모델의 HDR과 높은 색상 정확도를 통해, 게임 내 환경의 밝기가 어떻게 변하든 게임의 모든 세부 사항을 볼 수 있습니다.</p>
+                    </div>
+                    <div class="product_imgbox">
+                        <img src="img/product_2_07.png" alt="0207">
+                    </div>
+                    <div class="product_textbox">
+                        <h3>레노버 Vantage로 한 단계 더 높아진 성능</h3>
+                        <p>레노버 Vantage는 설정을 최적화하여 게임 경험을 향상하도록 도와줍니다. 올인원 도구 모음을 통해 노트북 기능을 조정하고, 사용자 지정하며, 최대화하세요. 실시간
+                            성능 대시보드, 오버클러킹 제어, 지능형 팬 제어를 통한 AI 성능 튜닝으로 그 어떤 것도 성공을 가로막지 못하게 합니다.</p>
+                    </div>
+                    <div class="product_imgbox">
+                        <img src="img/product_2_08.png" alt="0208">
+                    </div>
+                    <div class="product_textbox">
+                        <h3>환경을 생각하는 제품</h3>
+                        <p>Legion Pro 5 Gen 8 노트북은 지속 가능성을 염두에 두고 책임감을 갖고 게임할 수 있도록 설계되었습니다. 상단 커버 프레임은 30%의
+                            PCC(Post-Consumer Content)로 제작된 후 내유 처리되어 깨끗하고 환경친화적입니다. 후면 I/O 대시보드는 필요한 모든 연결을 제공하여 일상적인
+                            경험을 능률화하고 단순화합니다. 그리고 레노버의 CO<sub>2</sub>,즉 Carbon Offset Service를 통해 장치의 탄소 발자국을 줄이는 데 적극적인
+                            역할을 하여 환경 보호에 쉽게 참여할 수 있습니다.</p>
+                    </div>
+                    <div class="product_imgbox">
+                        <img src="img/product_2_09.png" alt="0209">
+                    </div>
+                    <div class="product_textbox">
+                        <h3>최대 작업 시간 및 플레이 시간</h3>
+                        <p>대용량 80Wh 배터리를 갖춘 Legion Pro 5 노트북으로 비교 불가한 성능을 즐겨보세요. 온종일 편하게 플레이하고, 업무를 처리하며, 스트리밍한 다음에 다시
+                            전원 콘센트에 연결할 필요가 없습니다. 초고속 충전 기술은 최대 140W의 USB-C 충전을 지원하여 배터리를 몇 분 만에 재충전합니다. 스마트 배터리 기능은 기계
+                            학습을 사용하여 배터리 용량을 보존하고 열화를 줄여 배터리 수명을 연장하고 노트북의 수명을 최대화합니다.</p>
+                    </div>
+                    <div class="product_imgbox">
+                        <img src="img/product_2_10.png" alt="0210">
+                    </div>
+                    <div class="product_textbox">
+                        <h3>더욱 강화된 경쟁력</h3>
+                        <p>Legion Pro 5에는 정밀한 컨트롤이 필요한 게이머를 위한 Legion TrueStrike 게이밍 키보드가 장착되어 있습니다. 한 차원 높은 맞춤 설정과 완벽하게
+                            최적화된 컨트롤을 통해 내 스타일에 맞게 게임플레이를 완성해보세요. 이 키보드는 풀 사이즈 화살표, 숫자 패드 및 대형 Mylar 터치패드를 갖추고 있어 게임에
+                            필요한 모든 것을 제공합니다. 또한 1.5mm 키 트래블과 교체 가능한 키캡 및 Legion Spectrum이 제공하는 4존 RGB를 통해 플레이 스타일에 꼭 맞게
+                            설정하여 게임에서 우위를 점할 수 있습니다.</p>
+                    </div>
+                    <div class="product_imgbox">
+                        <img src="img/product_2_11.png" alt="0211">
+                    </div>
+                    <div class="product_textbox">
+                        <h3>상황 지각력 극대화</h3>
+                        <p>Tobii Horizon은 다양한 게임과 게임 프랜차이즈에서 새로운 차원의 몰입을 경험할 수 있게 해주는 최첨단 기어리스 헤드 트래킹 소프트웨어입니다. Tobii
+                            Aware는 게임에서 그치지 않고 개인정보 보호, 보안, 생산성 및 웰빙을 향상할 수 있는 스마트 기능의 새로운 시대로 여러분을 초대합니다.</p>
+                    </div>
+                    <div class="product_imgbox">
+                        <img src="img/product_2_12.png" alt="0212">
+                    </div>
+                    <div class="product_textbox">
+                        <h3>Legion Ultimate Support</h3>
+                        <p>Legion Ultimate Support는 META, 즉 가장 효과적인 전술(Effective Tactic Available)이 될 것입니다. 하나의 연락 창구를
+                            통해 IT 및 게임 전문가로부터 게임에 특화된 지원을 상시로 받아보세요. 하드웨어 및 소프트웨어 설정을 최적화하는 데 도움을 드립니다. Legion Ultimate
+                            Support 전문가는 여러분이 하루 종일 생산성을 유지하고 밤에도 막강한 경쟁력을 발휘하도록 지원합니다.</p>
+                    </div>
+                    <div class="product_imgbox">
+                        <img src="img/product_2_13.png" alt="0213">
+                    </div>
+                    <div class="product_textbox">
+                        <h3>궁극의 게임 허브인 Legion Arena</h3>
+                        <p>Legion Arena의 중앙 집중식 게임 허브는 인기 있는 스토어 및 게임 플랫폼과 쉽게 동기화되어 게임 라이브러리를 원하는 방식으로 자유롭게 플레이, 탐색 및
+                            관리할 수 있습니다. 좋아하는 게임을 찾기 위해 여러 앱 사이에서 전환하지 않고 한곳에서 모든 게임에 액세스하세요</p>
+                    </div>
+                    <div class="product_table">
+                        <h2>기술 사양</h2>
+                        <p>성능</p>
+                        <table class="inform_table table01">
+                            <tbody>
+                                <tr>
+                                    <th>프로세서</th>
+                                    <td>최대 AMD Ryzen 9 7945HX</td>
+                                </tr>
+                                <tr>
+                                    <th>운영 체제</th>
+                                    <td>최대 Windows 11 Pro</td>
+                                </tr>
+                                <tr>
+                                    <th>그래픽</th>
+                                    <td>최대 NVIDIA<sup>®</sup>GeForce RTX™ 4070 노트북 GPU, 8GB GDDR6(140W), 2175MHz 부스트 클럭
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>메모리</th>
+                                    <td>최대 32GB(2 x 16GB) 5200MHz DDR5</td>
+                                </tr>
+                                <tr>
+                                    <th>저장 장치</th>
+                                    <td>최대 2TB PCIe SSD Gen 4</td>
+                                </tr>
+                                <tr>
+                                    <th>배터리</th>
+                                    <td>
+                                        <ul>
+                                            <li>MobileMark 2018: 5.3hr, Local video (1080p) playback@150nits: 6.8hr</li>
+                                            <li>80Whr</li>
+                                            <li>초고속 충전 Pro(30분 충전으로 0~80% 용량 달성, 60분 충전으로 0~100% 용량 달성)</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>오디오</th>
+                                    <td>Nahimic Audio가 탑재된 2x2W 스피커 시스템</td>
+                                </tr>
+                                <tr>
+                                    <th>카메라</th>
+                                    <td>
+                                        <ul>
+                                            <li>내장 HD(1080p/720p) 웹캠</li>
+                                            <li>Tobii Horizon 지원</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="product_table">
+                        <p>연결</p>
+                        <table class="inform_table table02">
+                            <tbody>
+                                <tr>
+                                    <th>포트/슬롯</th>
+                                    <td>
+                                        <ul>
+                                            <li>USB-C 3.2 Gen 2 (data transfer / DP 1.4 only)</li>
+                                            <li>USB-A 3.2 Gen 1</li>
+                                            <li>USB-A 3.2 Gen 1</li>
+                                            <li>웹캠 E-셔터 스위치</li>
+                                            <li>DC 입력</li>
+                                            <li>USB-C 3.2 Gen 2; remove “(DisplayPort 1.4, power delivery 140W)
+                                            </li>
+                                            <li>2 x USB 3.2 Gen 1 (1x always on)</li>
+                                            <li>HDMI</li>
+                                            <li>이더넷(RJ45)</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>WiFi</th>
+                                    <td>
+                                        <ul>
+                                            <li>2x2 Wi-Fi 6e (802.11ax)</li>
+                                            <li>2x2 Wi-Fi 6 (802.11ax)<br><span>*6GHz WiFi 6E 작동은 운영 체제, WiFi 6E를 지원하는
+                                                    라우터/AP/게이트웨이, 지역 규제 인증 및 스펙트럼 할당의 지원 여부에 따라 다릅니다.</span>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="product_table">
+                        <p>디자인</p>
+                        <table class="inform_table table03">
+                            <tbody>
+                                <tr>
+                                    <th>디스플레이</th>
+                                    <td>
+                                        <ul>
+                                            <li>16” WQXGA (2560 x 1600), 500 nits, 16:10 Aspect Ratio, 240Hz Refresh
+                                                Rate, 100% sRGB, DisplayHDR 400, Dolby Vision, NVIDIA G-SYNC support,
+                                                TUV Low Blue Light, TUV High Gaming Performance, Anti-glare</li>
+                                            <li>16” WQXGA (2560 x 1600), 300 nits, 16:10 Aspect Ratio, 165Hz Refresh
+                                                Rate, 100% sRGB, Dolby Vision, NVIDIA G-SYNC support, TUV Low Blue
+                                                Light, Advanced Optimus support, Anti-glare</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>크기(높이x가로x세로)</th>
+                                    <td>21.9-26.75mm x 363.4mm x 260.35 / 0.86″-1.05″ x 14.3″ x 10.25″</td>
+                                </tr>
+                                <tr>
+                                    <th>무게</th>
+                                    <td>Less than 2.5kg / 5.5lbs</td>
+                                </tr>
+                                <tr>
+                                    <th>키보드</th>
+                                    <td>
+                                        <ul>
+                                            <li>1.5mm 키 트래블</li>
+                                            <li>100% 안티 고스팅</li>
+                                            <li>교체 가능한 캡 세트</li>
+                                            <li>Legion Spectrum RGB 소프트웨어 지원</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>색상</th>
+                                    <td>오닉스 그레이</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="product_table">
+                        <p>지속가능성</p>
+                        <table class="inform_table table04">
+                            <tbody>
+                                <tr>
+                                    <th>소재</th>
+                                    <td>상단 덮개에 PCC(Post-Consumer Content) 30% 사용</td>
+                                </tr>
+                                <tr>
+                                    <th>인증/등록</th>
+                                    <td>
+                                        <ul>
+                                            <li>ENERGY STAR®8</li>
+                                            <li>EPEAT®Silver(해당하는 경우)*<br>
+                                                <span><a href="https://www.epeat.net/">*국가별 등록 상태를 확인하려면www.epeat.net을
+                                                        방문하세요.</a></span>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="product_table">
+                        <p>기타 정보</p>
+                        <table class="inform_table table05">
+                            <tbody>
+                                <tr>
+                                    <th>보안</th>
+                                    <td>전자식 웹캠 E-셔터</td>
+                                </tr>
+                                <tr>
+                                    <th>사전 설치 소프트웨어</th>
+                                    <td>
+                                        <ul>
+                                            <li>레노버 Antivirus</li>
+                                            <li>레노버 PC Manager</li>
+                                            <li>레노버 Vantage</li>
+                                            <li>McAfee<sup>®</sup>LiveSafe™</li>
+                                            <li>Microsoft Office 평가판9</li>
+                                            <li>Power2Go</li>
+                                            <li>초고해상도</li>
+                                            <li>Tobii Horizon</li>
+                                            <li>X-Rite 색상 관리 도구</li>
+                                            <li>Fn + R: 240Hz, 165Hz, 60Hz</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>기본 구성</th>
+                                    <td>
+                                        <ul>
+                                            <li>Legion Pro 5i Gen 8(16″ AMD)</li>
+                                            <li>사용 설명서</li>
+                                            <li>전원 어댑터</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>사양은 지역/모델에 따라 다를 수 있습니다.</p>
+                </div>
+                <button class="spec_table open_table more">모든 기술 사양 보기</button>
+                <button class="spec_table fold_table">기술 사양 접기</button>
+                <div id="port_slot">
+                    <h2>포트 및 슬롯</h2>
+                    <hr>
+                    <img src="img/port_02.png" alt="port_slot_02">
+                    <table class="porttable">
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <td>헤드폰/마이크 콤보</td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>웹캠 E-셔터 스위치</td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>USB-A 3.2 Gen 1</td>
+                            </tr>
+                            <tr>
+                                <th>4</th>
+                                <td>USB-A 3.2 Gen 1</td>
+                            </tr>
+                            <tr>
+                                <th>5</th>
+                                <td>USB-C 3.2 Gen 2 (DisplayPort™ 1.4)</td>
+                            </tr>
+                            <tr>
+                                <th>6</th>
+                                <td>이더넷(RJ45)</td>
+                            </tr>
+                            <tr>
+                                <th>7</th>
+                                <td>USB-C 3.2 Gen 2</td>
+                            </tr>
+                            <tr>
+                                <th>8</th>
+                                <td>
+                                    HDMI</td>
+                            </tr>
+                            <tr>
+                                <th>9</th>
+                                <td>2x USB 3.2 Gen 1 (1x Always On)</td>
+                            </tr>
+                            <tr>
+                                <th>10</th>
+                                <td>DC 입력</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="fitable_accessories">
+                    <h2>호환 가능한 액세서리</h2>
+                    <hr>
+                    <div class="fit_acc_box">
+                        <div class="accbox">
+                            <div class="ship_ready">배송 준비 완료</div><a href=""><img src="img/icon/circle_heart.png"
+                                    alt="heart" class="fav_btn"></a>
+                            <a href="">
+                                <div class="acc_imgbox"><img src="img/acc_bag_01.png" alt="acc02" class="accimg">
+                                </div>
+                                <h4>ThinkPad Essential Plus 39.6cm(15.6)백팩(에코)</h4>
+                            </a>
+                            <h3>&#92;62,401</h3>
+                            <button class="cart_add">장바구니에 추가</button><br>
+                            <button class="acc_more open_acc more">더 보기</button>
+                            <div class="acc_textbox">
+                                <p>부품 번호 4X41A30364</p>
+                                <img src="img/5_Star.png" alt="star"> <span>4.5(306)</span>
+                                <h6>핵심 세부사항</h6>
+                                <p>전문성과 운동성이 완벽하게 어우러진 ThinkPad Essential Plus 39.6cm(15.6) 백팩(에코)은 사무실에서나 체육관에서나
+                                    모두
+                                    사용할 수 있습니다. 넓은 수납 공간은 장치와 생필품을 안전하게 정리하고 이용할 수 있도록 유지하며, 탄도 나일론과 견고한 하드웨어는 날씨와
+                                    일상적인
+                                    마모로부터 보호합니다.</p>
+                            </div>
+                            <button class="acc_more fold_acc">적게 보기</button>
+                        </div>
+                        <div class="accbox">
+                            <div id="moniter_box">
+                                <a href=""><img src="img/icon/circle_heart.png" alt="heart" class="fav_btn"></a>
+                            </div>
+                            <a href="">
+                                <div class="acc_imgbox"><img src="img/acc_monitor_01.png" alt="monitor01"
+                                        class="accimg">
+                                </div>
+
+                                <h4>Lenovo G24-20 60.5cm(23.8형) FHD 게이밍 모니터</h4>
+                            </a>
+                            <h3>&#92;278,000</h3>
+                            <button class="cart_add">장바구니에 추가</button><br>
+                            <button class="acc_more open_acc more">더 보기</button>
+                            <div class="acc_textbox">
+                                <p>부품 번호 66CFGAC1KR</p>
+                                <img src="img/5_Star.png" alt="star"> <span>4.6(37)</span>
+                                <h6>핵심 세부사항</h6>
+                                <p>e스포츠 선수라면 최신 기술로 완벽하게 무장되어 있어야 합니다. 경쟁이 치열한 게임 업계를 위한 Lenovo G24-20은 게임 결과를 한 단계 더
+                                    높여줍니다. 60.5cm(23.8형)의 화면 크기는 e스포츠를 즐기기에 적합하며, 3면 니어에지리스 디스플레이를 사용하면 방해 받지 않고 게임에 집중할
+                                    수 있습니다. 사용자의 기술과 반응 속도는 초고속 144Hz의 새로 고침 빈도, 165Hz로 오버클럭(0.5ms MPRT) 및 AMD FreeSync™
+                                    프리미엄 기술로 최고의 역량을 펼칠 수 있으며 대기 시간이나 화면 찢김 및 끊김 현상으로 인한 대상 누락이 없도록 보장합니다. <br><span>자세한
+                                        내용보기</span></p>
+                            </div>
+                            <button class="acc_more fold_acc">적게 보기</button>
+                        </div>
+                        <div class="accbox">
+                            <div class="ship_ready">배송 준비 완료</div><a href=""><img src="img/icon/circle_heart.png"
+                                    alt="heart" class="fav_btn"></a>
+                            <a href="">
+                                <div class="acc_imgbox"><img src="img/acc_bag_02.png" alt="acc04" class="accimg">
+                                </div>
+                                <h4>Lenovo 39.6cm(15.6) 노트북 캐주얼 백팩 B210 블랙</h4>
+                            </a>
+                            <h3>&#92;17,401</h3>
+                            <button class="cart_add">장바구니에 추가</button><br>
+                            <button class="acc_more open_acc more">더 보기</button>
+                            <div class="acc_textbox">
+                                <p>부품 번호 4X40T84059</p>
+                                <img src="img/5_Star.png" alt="star"> <span>4.1(83)</span>
+                                <h6>핵심 세부사항</h6>
+                                <p>The Lenovo 16" Laptop Casual Backpack's compact design style is perfect for work
+                                    and
+                                    school. It features in durable snow yarn polyester fabric and streamlined design
+                                    with a padded interior to protect notebooks and important items. Quick access
+                                    zippered front pocket for added storage. A quilted back panel make it
+                                    comfortable
+                                    for all-day use.</p>
+                            </div>
+
+                            <button class="acc_more fold_acc">적게 보기</button>
+                        </div>
+                        <div class="accbox">
+                            <div class="ship_ready">배송 준비 완료</div><a href=""><img src="img/icon/circle_heart.png"
+                                    alt="heart" class="fav_btn"></a>
+                            <a href="">
+                                <div class="acc_imgbox"><img src="img/acc_monitor_02.png" alt="monitor02"
+                                        class="accimg">
+                                </div>
+                                <h4>ThinkVision C24-40 23.8" 모니터</h4>
+                            </a>
+                            <h3>&#92;153,000</h3>
+                            <button class="cart_add">장바구니에 추가</button><br>
+                            <button class="acc_more open_acc more">더 보기</button>
+                            <div class="acc_textbox">
+                                <p>부품 번호 63DCKAR6WW</p>
+                                <img src="img/5_Star.png" alt="star"> <span>4.6(465)</span>
+                                <h6>핵심 세부사항</h6>
+                                <p>Lenovo C24-40 모니터로 낮에는 업무 효율을 높이고 밤에는 게임을 즐기십시오. 23.8인치 3면 니어에지리스 VA 패널은 화면의 콘텐츠를
+                                    선명하고 풍성한 화질로 표시하며 178°/178° 광시야각으로 어떤 각도에서든 일관된 시각적 이미지를 경험할 수 있습니다. FHD(1920 x
+                                    1080) 해상도와 72% NTSC 색 영역으로 눈에 띄는 디스플레이를 선사합니다. 75Hz의 주사율과 5ms의 응답 시간이 지원되는 뛰어난 성능의
+                                    디스플레이를 통해 다양한 비디오 콘텐츠를 원활하게 경험할 수 있습니다. <br><span>자세한 내용보기</span></p>
+                            </div>
+                            <button class="acc_more fold_acc">적게 보기</button>
+
+                        </div>
+                        <div class="accbox">
+                            <div class="ship_ready">배송 준비 완료</div><a href=""><img src="img/icon/circle_heart.png"
+                                    alt="heart" class="fav_btn"></a>
+                            <a href="">
+                                <div class="acc_imgbox"><img src="img/acc_bag_04.png" alt="acc06" class="accimg">
+                                </div>
+                                <h4>Lenovo Legion 액티브 게이밍 백팩</h4>
+                            </a>
+                            <h3>&#92;19,501</h3>
+                            <button class="cart_add">장바구니에 추가</button><br>
+                            <button class="acc_more open_acc more">더 보기</button>
+                            <div class="acc_textbox">
+                                <p>부품 번호 GX41C86982</p>
+                                <img src="img/5_Star.png" alt="star"> <span>4.6(235)</span>
+                                <h6>핵심 세부사항</h6>
+                                <p>Lenovo Legion 액티브 게이밍 백팩은 게이밍과 게이머가 어떤 모습일 수 있는지 잘 보여줍니다. 제품에 재활용 PET 소재를 도입해 환경 보호
+                                    의식을 가진 게이머가 환경 친화적인 미래를 지향하는 문화를 선도할 수 있도록 디자인하였습니다. 품질 역시 놓치지 않고 전용 수납 공간과 기기 보관용
+                                    포켓, 패딩 처리된 43.2cm(17형) 노트북/키보드 수납 공간 등 다양한 기능을 자랑합니다.</p>
+                            </div>
+                            <button class="acc_more fold_acc">적게 보기</button>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="under_accbtn">모든 호환 액세서리 보기</button>
+                    </div>
+                </div>
+                <nav class="sticky">
+                    <div id="rev_sub_menu">
+                        <a href="#sub_Information">
+                            <div>상품정보</div>
+                        </a>
+                        <a href="#rev_sub_menu">
+                            <div>상품후기</div>
+                        </a>
+                        <a href="#qna_sub_menu">
+                            <div>문의사항</div>
+                        </a>
+                        <a href="#ship_sub_menu">
+                            <div>배송/교환/반품/AS안내</div>
+                        </a>
+                    </div>
+                </nav>
+                <div id="product_Review">
+                    <button>리뷰 작성하기</button>
+                    <table id="rev_table">
+                        <tbody>
+                            <tr>
+                                <th>15</th>
+                                <td><a href="">고성능 게이밍 노트북을 찾는 중이었는데 괜찮네요.</a></td>
+                                <td>alansuta</td>
+                                <td>2024.01.12</td>
+                            </tr>
+                            <tr>
+                                <th>14</th>
+                                <td><a href="">성능이 좋아요</a></td>
+                                <td>익명(123.54...)</td>
+                                <td>2024.01.03</td>
+                            </tr>
+                            <tr>
+                                <th>13</th>
+                                <td><a href="">선물로 받아서 사용중인데 아주 좋습니다.</a></td>
+                                <td>게임에진심인편</td>
+                                <td>2023.11.15</td>
+                            </tr>
+                            <tr>
+                                <th>12</th>
+                                <td><a href="">역시 레노버 리전!</a></td>
+                                <td>익명(124.68...)</td>
+                                <td>2023.09.23</td>
+                            </tr>
+                            <tr>
+                                <th>11</th>
+                                <td><a href="">탁월한 성능에 강력한 퍼포먼스!</a></td>
+                                <td>박이김</td>
+                                <td>2023.07.27</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="num_order">
+                        <ul>
+                            <li>1</li>
+                            <li>|</li>
+                            <li>2</li>
+                            <li>|</li>
+                            <li>3</li>
+                            <li>|</li>
+                            <li>4</li>
+                            <li>|</li>
+                            <li>5</li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="sticky">
+                    <div id="qna_sub_menu">
+                        <a href="#sub_Information">
+                            <div>상품정보</div>
+                        </a>
+                        <a href="#rev_sub_menu">
+                            <div>상품후기</div>
+                        </a>
+                        <a href="#qna_sub_menu">
+                            <div>문의사항</div>
+                        </a>
+                        <a href="#ship_sub_menu">
+                            <div>배송/교환/반품/AS안내</div>
+                        </a>
+                    </div>
+                </nav>
+                <div id="product_Question">
+                    <button>상품문의 글쓰기</button>
+                    <table id="qna_table">
+                        <tbody>
+                            <tr>
+                                <th>9</th>
+                                <td><a href="">배송문의</a></td>
+                                <td>익명(87.102...)</td>
+                                <td>2024.01.12</td>
+                                <td>답변대기</td>
+                            </tr>
+                            <tr>
+                                <th>8</th>
+                                <td><a href="">비공개 문의입니다.</a></td>
+                                <td>익명(123.68...)</td>
+                                <td>2024.01.03</td>
+                                <td>답변대기</td>
+                            </tr>
+                            <tr>
+                                <th>7</th>
+                                <td><a href="">비공개 문의입니다.</a></td>
+                                <td>익명</td>
+                                <td>2023.11.15</td>
+                                <td>답변완료</td>
+                            </tr>
+                            <tr>
+                                <th>6</th>
+                                <td><a href="">배송문의</a></td>
+                                <td>익명</td>
+                                <td>2023.09.23</td>
+                                <td>답변완료</td>
+                            </tr>
+                            <tr>
+                                <th>5</th>
+                                <td><a href="">A/S관련 문의합니다.</a></td>
+                                <td>malfoy</td>
+                                <td>2023.07.27</td>
+                                <td>답변완료</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="num_order">
+                        <ul>
+                            <li>1</li>
+                            <li>|</li>
+                            <li>2</li>
+                            <li>|</li>
+                            <li>3</li>
+                            <li>|</li>
+                            <li>4</li>
+                            <li>|</li>
+                            <li>5</li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="sticky">
+                    <div id="ship_sub_menu">
+                        <a href="#sub_Information">
+                            <div>상품정보</div>
+                        </a>
+                        <a href="#rev_sub_menu">
+                            <div>상품후기</div>
+                        </a>
+                        <a href="#qna_sub_menu">
+                            <div>문의사항</div>
+                        </a>
+                        <a href="#ship_sub_menu">
+                            <div>배송/교환/반품/AS안내</div>
+                        </a>
+                    </div>
+                </nav>
+                <div id="shipping_Information">
+                    <ul>
+                        <li>배송료 : 기본적으로 배송비는 무료입니다.
+                            (도서, 산간, 오지, 제주도, 일부지역, 설치 배송 상품 등은 배송비가 추가될 수 있습니다.)</li>
+                        <li>변심으로 인한 반품시 왕복 배송비를 부담하셔야 합니다.</li>
+                        <li>제품에 따라 출고지가 다른 제품의 경우, 변심반품시 왕복배송비가 개별부과될 수 있습니다.</li>
+                        <li>배송시간 : 입금확인 후 평균 2~3일 이내에 받아보실 수 있습니다. (주말, 공휴일, 천재지변 제외)</li>
+                        <li>상품을 여러가지 구매하셨을 경우 여러 박스로 포장되어 발송될 수 있으며, 배송 도착 날짜와 시간이 다를 수도 있습니다.</li>
+                        <li>오후 2시 이후 주문 후 취소나 배송지/옵션 변경 시 고객센터로 연락 주시면 신속히 변경 처리해드립니다.</li>
+                        <li>아래와 같은 경우 입금확인이 어려워 배송이 지연될 수 있습니다. (고객센터로 연락요망)<br>
+                            주문자와 입금자가 달라 확인이 되지 않는 경우 / 주문금액과 입금 금액이 다를 경우 / 주문보다 입금을 먼저 하신 경우</li>
+                        <li>주문 후 7일 이내에 입금하지 않으면 주문이 자동 취소됩니다.</li>
+                        <li>선택하신 구성품 이외에는 배송되지 않으며, 필요시 꼭 선택사항을 확인하시기 바랍니다.</li>
+                        <li>일반 : 마이크로 소프트가 제품 구입시제공한 제품키는 Windows 11, Windows 10 및 잠재적인 업그레이드와 다운그레이드의 상세내용을 포함합니다.
+                            레노버는 타사의 제품이나 서비스에 대해서는 보증하지 않습니다.</li>
+                        <li>제품에 따라 모든 기능이 지원되는 것이 아닙니다. 제품별 스펙은 다를 수 있습니다.</li>
+                        <li>본 웹사이트의 정보는 별도의 통지없이 변경되거나 갱신될 수 있으며, 제공된 정보에 대한 정확성에 대해서는 아무런 책임이 없습니다. 해당정보의 사용으로 인한
+                            위험은 사용자 자신이 감수해야 합니다.</li>
+                        <li>실제 배터리 사용시간은 사용하고 있는 어플리케이션과 셋팅, 그리고 기능 상의 활성화 상태, 네트워크 상태, 사용온도 등 다양한 요인에 의해서 변동될 수
+                            있습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+        <div id="footer_wrap">
+            <div class="footbox joinus">
+                <h2>Join Lenovo Family</h2>
+                <p>Sign up for updates with e-mail</p>
+                <form id="sign_mail"><img src="img/icon/email.png" alt="email"><input type="email"><button><img
+                            src="img/submit_arrow.png" alt=""></button>
+                </form><br>
+                <p>Follow US</p>
+                <ul id="social_media">
+                    <li><a href="https://www.facebook.com/lenovokorea/" target="_blank"><img src="img/icon/facebook.png"
+                                alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/Lenovo" target="_blank"><img src="img/icon/twitter.png"
+                                alt="twitter"></a></li>
+                    <li><a href="https://www.youtube.com/user/LenovoClub79" target="_blank"><img
+                                src="img/icon/youtube.png" alt="youtube"></a></li>
+                    <li><a href="https://kr.linkedin.com/" target="_blank"><img src="img/icon/linkedin.png"
+                                alt="linkedin"></a></li>
+                    <li><a href="https://www.instagram.com/lenovo_kr/" target="_blank"><img src="img/icon/instagram.png"
+                                alt="instagram"></a></li>
+                </ul>
+            </div>
+            <div class="footbox contactus">
+                <h2>Contact Us</h2>
+                <p>1670 - 0088</p><br>
+                <a href="https://www.google.com/maps/search/%EB%A0%88%EB%85%B8%EB%B2%84/data=!3m1!4b1?hl=ko&entry=ttu"
+                    target="_blank"><img src="img/icon/pin.png" alt="pin">
+                    <p>Service Center
+                    </p>
+                </a><br>
+                <p>Gangnam-Gu Teheran-ro<br>211, 12F</p>
+            </div>
+            <div class="footbox gethelp">
+                <h2>Get Help</h2>
+                <p><a href="">Lenovo Vision Video</a></p>
+                <p><a href="">Where to Buy</a></p>
+                <p><a href="">Product Manuals</a></p>
+                <p><a href="">FAQ</a></p>
+            </div>
+            <div id="omega">
+                <nav id="bot_bar">
+                    <ul>
+                        <li><a href="">About Lenovo</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Shop by Industry</a></li>
+                        <li><a href="">Resources</a></li>
+                        <li><a href="">Customer Support</a></li>
+                    </ul>
+                </nav>
+                <span>&copy;2024 Lenovo. All rights reserved.</span>
+            </div>
+        </div>
+        <div id="footer_grad"></div>
+        <a href=""><img src="img/icon/up_arrow.png" alt="upper_arrow" id="reset_arrow"></a>
+    </footer>
+
+</body>
+
+</html>

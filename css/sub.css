@@ -1,0 +1,1125 @@
+@charset "utf-8";
+
+/* 서브페이지(ThinkBook14sYogaGen3) */
+/* CSS */
+
+section {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(to right bottom, #f8f2ef, #feeaeb);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+#main_Wrap>hr {
+    margin: 0 auto;
+    width: 1200px;
+    opacity: 0.3;
+    margin-bottom: -2px;
+}
+
+/* 서브페이지 위쪽 */
+#upper_subPage {
+    height: 1100px;
+    width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#upper_Menu li {
+    float: left;
+    padding: 0 15px;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 5px;
+    font-family: "S-CoreDream-3Light";
+}
+
+#upper_Menu li::after {
+    content: ">";
+    float: right;
+    margin-right: -20px;
+}
+
+#upper_Menu li:last-child::after {
+    content: "";
+}
+
+#title_Box>h3 {
+    clear: both;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    font-size: 56px;
+    font-family: "GmarketSansMedium";
+    margin-bottom: 20px;
+}
+
+#title_Box>img {
+    max-width: 100px;
+    position: relative;
+    left: 25px;
+    top: 20px;
+}
+
+#title_Box>span {
+    position: relative;
+    left: 35px;
+    top: 11px;
+    font-size: 14px;
+    font-family: "NanumSquareRound"
+}
+
+#title_Box>h4 {
+    position: relative;
+    top: 20px;
+    left: 25px;
+    font-size: 32px;
+    font-family: "NanumSquareRound";
+    margin-bottom: 30px;
+}
+
+/* 제품정보 */
+#product_spec_1 {
+    position: relative;
+    left: 50px;
+    top: 20px;
+    margin: 10px 0px 40px 0px;
+    font-size: 16px;
+    display: inline-block;
+    color: #555;
+    width: 500px;
+    height: 150px;
+    font-family: "NanumSquareRound";
+}
+
+#product_spec_1 li {
+    list-style: disc;
+    margin-top: 10px;
+}
+
+/* 제품가격 */
+#product_price_box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 550px;
+    margin-top: 50px;
+}
+
+#product_price_box>h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+    left: 25px;
+    top: -10px;
+    font-family: "NanumSquareRound"
+}
+
+#product_price_box>p {
+    position: relative;
+    text-align: left;
+    left: 25px;
+    top: -20px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: "NanumSquareRound"
+}
+
+#product_price_box #totalprice_2 {
+    display: none;
+}
+
+#product_price_box p:nth-of-type(1)::after {
+    content: "멤버십 특별 할인 혜택>";
+    color: rgb(0, 0, 145);
+    text-decoration: underline;
+    margin-left: 10px;
+    cursor: pointer;
+    animation: twinkle 1s infinite linear alternate;
+}
+
+#product_price_box p:nth-of-type(2)::after {
+    content: "SheerID로 간편하게 학생 인증!>";
+    color: rgb(0, 0, 145);
+    text-decoration: underline;
+    margin-left: 10px;
+    cursor: pointer;
+    animation: twinkle 1s infinite linear alternate;
+}
+
+@keyframes twinkle {
+    0% {
+        color: 0, 0, 145;
+    }
+
+    100% {
+        color: gold;
+    }
+}
+
+/* 선택옵션 */
+#product_option {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #333;
+    border: 2px solid #555;
+    font-family: "NanumSquareRound"
+}
+
+#upper_subPage .purchasewrap {
+    width: 550px;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: 20px;
+}
+
+.purchase {
+    width: 100%;
+    margin-top: 40px;
+    font-family: "NanumSquareRound";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.purchase a {
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #333;
+    line-height: 70px;
+}
+
+.purchase .shopping_cart {
+    width: 23%;
+    height: 100%;
+}
+
+.purchase .focus_item {
+    width: 23%;
+    height: 100%;
+}
+
+.purchase .make_purchase {
+    width: 45%;
+    height: 100%;
+}
+
+.purchase a:hover {
+    background-color: #666;
+    color: white;
+    transition: ease 0.4s;
+}
+
+/* 제품사진 */
+#product_img_part {
+    float: right;
+    width: 600px;
+    position: relative;
+    bottom: 850px;
+    right: -10px;
+}
+
+#product_img_part .product_img {
+    width: 600px;
+    height: 500px;
+}
+
+#product_img_part .product_img img {
+    width: 520px;
+    margin-left: 20px;
+}
+
+#img_2,
+#img_3,
+#img_4 {
+    display: none;
+}
+
+#product_img_part .imgbox2 {
+    width: 550px;
+    height: 120px;
+}
+
+#product_img_part .thumbnail img {
+    max-width: 120px;
+}
+
+/* 썸네일 */
+.thumbnail {
+    width: 120px;
+    height: 120px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    margin: 0px 5px;
+}
+
+.thumbnail:nth-of-type(1) {
+    margin-left: 20px;
+}
+
+.thumbnail:hover::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #f8ddd0;
+    border-radius: 5px;
+    opacity: 0.4;
+}
+
+/* 광고배너 */
+#main_Wrap .ad_banner {
+    display: flex;
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+    color: white;
+    padding: 30px;
+    margin: 50px 0px;
+}
+
+#main_Wrap .banners {
+    background-color: white;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: cent;
+    height: auto;
+}
+
+#main_Wrap .ad_busi {
+    background-color: #294e95;
+}
+
+#main_Wrap .ad_edu {
+    background-color: purple;
+}
+
+#main_Wrap .ad_banner>h3 {
+    width: 20%;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "GmarketSansMedium";
+}
+
+#main_Wrap .ad_banner>p {
+    align-self: center;
+    font-size: 14px;
+    width: 40%;
+    padding: 20px;
+    font-family: "NanumSquareRound";
+}
+
+#main_Wrap .ad_banner>button {
+    width: 100px;
+    height: 40px;
+    align-self: center;
+    font-size: 14px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-family: "GmarketSansMedium";
+}
+
+/* 상세페이지 하단부 */
+#subWrap {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* 세부페이지 메뉴바 */
+#subWrap #sub_Information #pro_sub_menu {
+    margin: 0 auto;
+    width: 1200px;
+    height: 65px;
+    border-right: none;
+    border-left: none;
+    display: flex;
+    background-color: black;
+    font-family: "GmarketSansMedium";
+}
+
+#subWrap #sub_Information #pro_sub_menu a {
+    text-align: center;
+    background-color: #666;
+    color: white;
+    width: 400px;
+    height: 65px;
+    border-bottom: 1px solid #000;
+    flex-shrink: 1;
+    line-height: 65px;
+}
+
+#subWrap #sub_Information #pro_sub_menu a:first-of-type {
+    background-color: #fff;
+    color: black;
+    border: 1px solid #000;
+    border-bottom: none;
+    border-left: none;
+}
+
+#subWrap #sub_Information #pro_sub_menu a:hover {
+    background-color: #fff;
+    color: black;
+    transition: 0.4s;
+}
+
+/* 상품정보파트 */
+#product_Information {
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content: space-around;
+    font-family: "NanumSquareRound"
+}
+
+#product_Information>p {
+    border-top: 1px solid #bbb;
+    flex-grow: 1;
+    text-align: right;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.product_imgbox {
+    margin-top: 10px;
+    width: 550px;
+    height: 500px;
+}
+
+.product_textbox {
+    margin-top: 10px;
+    width: 550px;
+    height: 250px;
+    align-self: center;
+}
+
+.product_imgbox img {
+    max-width: 550px;
+}
+
+.product_textbox>h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.product_textbox>p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.product_textbox>h6 {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+/* 제품제원표 */
+.product_table {
+    width: 1200px;
+}
+
+.product_table>h2 {
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+.product_table>p {
+    padding: 5px 30px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    background-color: #f5f5f5;
+    border-top: 1px solid #bbb;
+}
+
+.product_table .inform_table {
+    line-height: 40px;
+    width: 1200px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.inform_table tr th {
+    width: 25%;
+    text-align: right;
+    padding: 0 20px;
+    border-collapse: collapse;
+    border-right: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+}
+
+.inform_table tr:last-of-type th {
+    border-bottom: none;
+}
+
+.inform_table tr td {
+    font-size: 14px;
+    color: #555;
+    width: 75%;
+    padding: 0px 40px;
+    border-collapse: collapse;
+    border-bottom: 1px solid #bbb;
+}
+
+.inform_table tr:last-of-type td {
+    border: none;
+}
+
+.inform_table tr td span {
+    font-size: 10.5px;
+    position: relative;
+    top: -25px;
+    left: 15px;
+}
+
+.inform_table tr td #sub_2nd {
+    position: relative;
+    top: -50px;
+}
+
+.inform_table tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.inform_table tr td li {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.product_table .table02,
+.table03,
+.table04,
+.table05 {
+    display: none;
+}
+
+/* 제원표 펼치기 버튼 */
+.spec_table {
+    width: 100%;
+    border: none;
+    background-color: white;
+    font-size: 18px;
+    color: #294e95;
+    font-weight: bold;
+    flex-grow: 1;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    font-family: "NanumSquareRound"
+}
+
+.open_table::after {
+    content: '▽';
+    margin-left: 10px;
+}
+
+.fold_table::after {
+    content: '△';
+    margin-left: 10px;
+}
+
+.more {
+    display: block;
+}
+
+/* 포트슬롯파트 */
+#port_slot {
+    background-color: white;
+    padding: 150px 0px;
+    font-family: "NanumSquareRound"
+}
+
+#port_slot>h2 {
+    margin-bottom: 10px;
+    margin-left: 25px;
+    width: 100%;
+}
+
+#port_slot>img {
+    width: 100%;
+}
+
+#port_slot .porttable {
+    background-color: #f5f5f5;
+    height: 280px;
+    width: 800px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.porttable tbody {
+    display: flex;
+    flex-flow: column wrap;
+    height: 280px;
+    border-collapse: collapse;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+#port_slot .porttable tr {
+    margin: 0 auto;
+    width: 45%;
+    position: relative;
+    left: 70px;
+}
+
+.porttable tr th {
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    right: 20px;
+}
+
+.porttable tr td {
+    padding: 10px;
+    font-size: 95%;
+    color: #555;
+}
+
+/* 액세서리파트 */
+#fitable_accessories {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    background-color: white;
+    overflow: hidden;
+    font-family: "NanumSquareRound"
+}
+
+#fitable_accessories>hr {
+    width: 100%;
+}
+
+#fitable_accessories>h2 {
+    margin-top: 150px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    width: 100%;
+}
+
+#fitable_accessories h3,
+p {
+    text-align: center;
+    width: 100%;
+}
+
+#fitable_accessories .fit_acc_box {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.fit_acc_box .accbox {
+    width: 18%;
+    height: auto;
+    border: 1px solid #999;
+    border-radius: 5px;
+    position: relative;
+    top: 30px;
+}
+
+.accbox:hover {
+    box-shadow: 3px 0px 3px #ccc;
+}
+
+.ship_ready {
+    background-color: chocolate;
+    color: white;
+    font-size: 80%;
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 10px;
+    position: relative;
+    top: -5px;
+}
+
+.fit_acc_box .accbox .fav_btn {
+    max-width: 40px;
+    display: inline-block;
+    position: relative;
+    left: 40px;
+    top: 10px;
+    border-radius: 50%;
+}
+
+.fav_btn:hover {
+    transition: all 1s;
+    opacity: 0.6;
+}
+
+.acc_imgbox {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.accimg {
+    max-width: 100%;
+}
+
+.accbox h4 {
+    color: #294e95;
+    padding: 5px;
+    margin: 20px 0px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.accbox h3 {
+    font-size: 28px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.accbox h3::after {
+    content: 'VAT 포함';
+    display: block;
+    font-size: 45%;
+}
+
+.accbox .cart_add {
+    width: 90%;
+    border: none;
+    height: 50px;
+    background-color: #294e95;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: "NanumSquareRound"
+}
+
+.cart_add:hover {
+    background-color: #f5f5f5;
+    color: #294e95;
+    border: 2px solid #294e95;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/* 더보기 제품정보 */
+.acc_textbox {
+    padding: 5px;
+    height: 400px;
+    display: none;
+}
+
+.acc_textbox img {
+    max-width: 70px;
+    position: relative;
+    left: 40px;
+    top: 10px;
+}
+
+.acc_textbox span {
+    font-size: 12px;
+    position: relative;
+    left: 40px;
+    top: 5px;
+}
+
+.acc_textbox h6 {
+    font-size: 13px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.acc_textbox p {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.acc_more {
+    border: none;
+    font-size: 16px;
+    color: #294e95;
+    background: none;
+    font-weight: 600;
+    padding: 5px;
+    margin-left: 10px;
+    display: none;
+    cursor: pointer;
+    font-family: "NanumSquareRound"
+}
+
+.open_acc::after {
+    content: '▽';
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.fold_acc::after {
+    content: '△';
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.more {
+    display: block;
+}
+
+#under_accbtn {
+    width: 300px;
+    height: 50px;
+    border: 1px solid #294e95;
+    background-color: white;
+    color: #294e95;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 50px;
+    position: relative;
+    left: 400px;
+    top: 10px;
+    font-weight: bold;
+    margin-bottom: 100px;
+    font-family: "NanumSquareRound"
+}
+
+#under_accbtn:hover {
+    background-color: #d9e4f8;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#product_Review {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 100px 0px;
+    font-family: "NanumSquareRound"
+}
+
+/* 후기 메뉴바 */
+
+#subWrap #rev_sub_menu a:nth-of-type(2) {
+    background-color: #fff;
+    color: black;
+    border: 1px solid #000;
+    border-bottom: none;
+}
+
+#subWrap #rev_sub_menu {
+    margin: 0 auto;
+    width: 1200px;
+    height: 65px;
+    border-right: none;
+    border-left: none;
+    display: flex;
+    background-color: black;
+    border-bottom: 1px solid #000;
+    font-family: "GmarketSansMedium";
+}
+
+#subWrap #rev_sub_menu a {
+    text-align: center;
+    background-color: #666;
+    color: white;
+    width: 400px;
+    height: 65px;
+    border-bottom: 1px solid #000;
+    flex-shrink: 1;
+    line-height: 65px;
+}
+
+#subWrap #rev_sub_menu a:hover {
+    background-color: #fff;
+    color: black;
+    transition: 0.4s;
+}
+
+#product_Review button {
+    border: 1px solid #ddd;
+    font-size: 14px;
+    padding: 10px;
+    background-color: #294e95;
+    color: white;
+    margin: 30px;
+    position: relative;
+    left: 1050px;
+    top: 10px;
+    cursor: pointer;
+    font-family: "NanumSquareRound"
+}
+
+#product_Review button:hover {
+    opacity: 0.7;
+}
+
+#product_Review #rev_table tbody {
+    display: flex;
+    width: 100%;
+    line-height: 50px;
+    border-collapse: collapse;
+    flex-flow: wrap;
+}
+
+#rev_table tr {
+    flex-grow: 1;
+}
+
+#rev_table tr th {
+    width: 200px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    flex-grow: 1;
+}
+
+#rev_table tr td {
+    font-size: 14px;
+    color: #555;
+    border-top: 1px solid #ccc;
+    flex-grow: 1;
+}
+
+#rev_table tr td:first-of-type {
+    width: 700px;
+}
+
+#rev_table tr td:nth-of-type(2) {
+    width: 150px;
+}
+
+#rev_table tr td:nth-of-type(3) {
+    width: 150px;
+    text-align: center;
+}
+
+#rev_table tr:first-of-type {
+    border-top: 2px solid #333;
+}
+
+#rev_table tr:nth-child(odd) {
+    background-color: #d9e4f8;
+}
+
+/* 후기 하단부 페이지UI */
+.num_order {
+    width: 100%;
+    height: 100px;
+    display: inline-block;
+}
+
+.num_order ul {
+    position: relative;
+    top: 50px;
+    left: 450px;
+}
+
+.num_order ul li {
+    float: left;
+    margin: 10px 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.num_order ul li:first-of-type::before {
+    content: '◀';
+    margin-right: 15px;
+}
+
+.num_order ul li:last-of-type::after {
+    content: '▶';
+    margin-left: 15px;
+}
+
+#product_Question {
+    width: 100%;
+    background-color: #fff;
+    padding: 100px 0px;
+    font-family: "NanumSquareRound"
+}
+
+/* 문의사항 메뉴바 */
+
+#subWrap #qna_sub_menu a:nth-of-type(3) {
+    background-color: #fff;
+    color: black;
+    border: 1px solid #000;
+    border-bottom: none;
+}
+
+#subWrap #qna_sub_menu {
+    margin: 0 auto;
+    width: 1200px;
+    height: 65px;
+    border-right: none;
+    border-left: none;
+    display: flex;
+    background-color: black;
+    border-bottom: 1px solid #000;
+    font-family: "GmarketSansMedium";
+}
+
+#subWrap #qna_sub_menu a {
+    text-align: center;
+    background-color: #666;
+    color: white;
+    width: 400px;
+    height: 65px;
+    border-bottom: 1px solid #000;
+    flex-shrink: 1;
+    line-height: 65px;
+}
+
+#subWrap #qna_sub_menu a:hover {
+    background-color: #fff;
+    color: black;
+    transition: 0.4s;
+}
+
+#product_Question button {
+    border: 1px solid #ddd;
+    font-size: 14px;
+    padding: 10px;
+    background-color: #294e95;
+    color: white;
+    margin: 30px;
+    position: relative;
+    left: 1035px;
+    top: 10px;
+    cursor: pointer;
+    font-family: "NanumSquareRound"
+}
+
+#product_Question button:hover {
+    opacity: 0.6;
+}
+
+#product_Question #qna_table tbody {
+    display: flex;
+    width: 100%;
+    line-height: 50px;
+    border-collapse: collapse;
+    flex-flow: wrap;
+}
+
+#qna_table tr {
+    flex-grow: 1;
+}
+
+#qna_table tr th {
+    width: 200px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    flex-grow: 1;
+}
+
+#qna_table tr td {
+    font-size: 14px;
+    color: #555;
+    border-top: 1px solid #ccc;
+    flex-grow: 1;
+}
+
+#qna_table tr td:first-of-type {
+    width: 600px;
+}
+
+#qna_table tr td:nth-of-type(2) {
+    width: 100px;
+}
+
+#qna_table tr td:nth-of-type(3) {
+    width: 100px;
+    text-align: center;
+}
+
+#qna_table tr td:nth-of-type(4) {
+    width: 200px;
+    text-align: center;
+}
+
+#qna_table tr:first-of-type {
+    border-top: 2px solid #333;
+}
+
+#qna_table tr:nth-child(odd) {
+    background-color: #d9e4f8;
+}
+
+/* 배송안내 메뉴바 */
+
+#subWrap #ship_sub_menu a:nth-of-type(4) {
+    background-color: #fff;
+    color: black;
+    border: 1px solid #000;
+    border-bottom: none;
+    border-right: none;
+}
+
+#subWrap #ship_sub_menu {
+    margin: 0 auto;
+    width: 1200px;
+    height: 65px;
+    border-right: none;
+    border-left: none;
+    display: flex;
+    background-color: black;
+    border-bottom: 1px solid #000;
+    font-family: "GmarketSansMedium";
+}
+
+#subWrap #ship_sub_menu a {
+    text-align: center;
+    background-color: #666;
+    color: white;
+    width: 400px;
+    height: 65px;
+    border-bottom: 1px solid #000;
+    flex-shrink: 1;
+    line-height: 65px;
+}
+
+#subWrap #ship_sub_menu a:hover {
+    background-color: #fff;
+    color: black;
+    transition: 0.4s;
+}
+
+#shipping_Information {
+    width: 100%;
+    height: 800px;
+    padding: 150px 0px;
+    background-color: white;
+    font-family: "NanumSquareRound"
+}
+
+#shipping_Information ul {
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 28px;
+    position: relative;
+    top: 40px;
+}
+
+#shipping_Information ul li {
+    list-style: disc;
+}

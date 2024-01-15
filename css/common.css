@@ -1,0 +1,440 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Fugaz+One&family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');        
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HakgyoansimGodeunjemokB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimGodeunjemokB.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'YClover-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/YClover-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* 헤더파트 CSS */
+/* 헤더의 헤더 */
+#tophead {
+    width: 100%;
+    height: 50px;
+    background: url(../img/tophead.png), no-repeat;
+    margin: 0 auto;
+}
+
+#tophead p {
+    font-family: "Caprasimo";
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    top: 4px;
+    animation: special_event 1s infinite alternate linear;
+}
+
+#tophead a {
+    color: white;
+}
+
+@keyframes special_event {
+    from {
+        color: #fff;
+    }
+
+    to {
+        text-shadow: -1px -1px 5px gold, 1px 1px 5px gold;
+    }
+}
+
+/* 헤더 */
+header {
+    width: 100%;
+    height: 100px;
+    background: url(../img/Gradient.png), repeat-x;
+    margin: 0 auto;
+    background-size: cover;
+    z-index: 0;
+}
+
+#login {
+    max-width: 1200px;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#home li {
+    font-family: "Ubuntu";
+    font-size: 16px;
+    float: left;
+    padding: 5px 5px;
+}
+
+#home a {
+    padding: 5px;
+}
+
+#home img {
+    float: right;
+}
+
+#register li {
+    font-family: "Ubuntu";
+    font-size: 12px;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    top: 2px;
+    left: 840px;
+}
+
+/* 상단 메뉴바 */
+/* 로고 */
+header #logo {
+    width: 1200px;
+    height: 70px;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+}
+
+header #logo img {
+    width: 105px;
+    float: left;
+    position: absolute;
+    top: 18px;
+    left: 20px;
+}
+
+/* 메인메뉴 */
+#FLDSAS {
+    width: 820px;
+    height: 22px;
+    font-size: 20px;
+    font-family: "Fugaz One";
+    text-align: center;
+    float: left;
+    position: absolute;
+    top: 12px;
+    left: 240px;
+}
+
+#FLDSAS .mainmenu {
+    overflow: hidden;
+    font-weight: bold;
+}
+
+#FLDSAS .mainmenu>li {
+    float: left;
+    width: 105px;
+    margin: 0px 15px;
+    padding: 7px 0px;
+}
+
+#FLDSAS .mainmenu>li:nth-of-type(2) {
+    margin-left: -1px;
+}
+
+#FLDSAS .mainmenu>li:nth-of-type(3) {
+    margin-left: -8px;
+}
+
+#FLDSAS .mainmenu>li:nth-of-type(4) {
+    margin-left: -10px;
+}
+
+.submenu {
+    display: none;
+}
+
+.submenu>li {
+    font-family: 'NanumSquareRound';
+    line-height: 25px;
+    background-color: #eee;
+    font-size: 12px;
+}
+
+.submenu>li:first-child {
+    margin-top: 0px;
+    position: relative;
+    z-index: 0;
+}
+
+.mainmenu>li:hover .submenu {
+    display: block;
+    opacity: 0.95;
+}
+
+/* 우측아이콘 */
+#user {
+    width: 180px;
+    height: 70px;
+    position: absolute;
+    top: 7px;
+    left: 1010px;
+}
+
+#user .icon img {
+    max-width: 35px;
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+/* 푸터 CSS */
+/* 푸터 */
+
+footer {
+    width: 100%;
+    height: 430px;
+    background-color: #333;
+    margin: 0 auto;
+    position: absolute;
+}
+
+footer a {
+    color: #fff;
+}
+
+#footer_wrap {
+    width: 1200px;
+    height: 360px;
+    margin: 0 auto;
+}
+
+/* 푸터 컨텐츠 박스 */
+.footbox {
+    width: 360px;
+    height: 360px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+#footer_wrap .footbox:nth-of-type(1) {
+    margin: 0 0 0 30px;
+}
+
+#footer_wrap .footbox:nth-of-type(2) {
+    margin: 0 0 0 30px;
+}
+
+#footer_wrap .footbox:nth-of-type(3) {
+    margin: 0 0 0 30px;
+}
+
+.footbox p {
+    font-family: 'Ubuntu';
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* 푸터 첫번째 컨텐츠 박스 */
+
+.joinus p {
+    font-size: 14px;
+    font-family: 'Ubuntu';
+}
+
+/* 메일 입력칸 */
+#sign_mail {
+    width: 320px;
+    height: 60px;
+    background-color: #3f3f3f;
+    margin-left: 20px;
+}
+
+#sign_mail>input {
+    border: none;
+    width: 180px;
+    height: 35px;
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    background-color: #3f3f3f;
+    position: relative;
+    top: -10px;
+    font-family: 'Ubuntu';
+}
+
+#sign_mail button {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 10px;
+    background-color: #3f3f3f;
+    border: none;
+    border-left: 3px solid white;
+}
+
+#sign_mail button img {
+    position: relative;
+    top: 4px;
+    left: -40px;
+}
+
+#sign_mail img {
+    max-width: 30px;
+    margin-left: 40px;
+    position: relative;
+    top: 0px;
+    left: -20px;
+}
+
+/* 소셜미디어 아이콘 */
+#social_media img {
+    max-width: 35px;
+}
+
+#social_media li {
+    float: left;
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    position: relative;
+    top: -15px;
+    left: 40px;
+}
+
+/* 두번째 컨텐츠 파트 */
+.contactus img {
+    max-width: 35px;
+    float: left;
+    position: relative;
+    top: -10px;
+    left: 90px;
+}
+
+.contactus p {
+    font-weight: bold;
+}
+
+.contactus p:first-of-type {
+    font-size: 20px;
+}
+
+.footbox h2 {
+    font-family: 'YClover-Bold';
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 70px;
+    margin-bottom: 25px;
+}
+
+/* 세번째 컨텐츠 파트 */
+.gethelp {
+    display: flex;
+    flex-direction: column;
+}
+
+.gethelp p {
+    text-transform: uppercase;
+    font-family: 'NanumSquareRound';
+}
+
+.gethelp p::after {
+    content: " ▷";
+}
+
+/* 하단 바 파트 */
+#omega {
+    width: 100%;
+    height: 70px;
+    clear: both;
+    font-family: 'Ubuntu';
+}
+
+#omega #bot_bar li {
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 12px;
+}
+
+#omega span {
+    color: white;
+    position: relative;
+    top: 25px;
+    left: 120px;
+}
+
+#footer_grad {
+    width: 100%;
+    height: 70px;
+    background-image: linear-gradient(#3e3e3e 5%, #000);
+}
+
+#reset_arrow {
+    position: fixed;
+    max-width: 45px;
+    right: 5%;
+    top: 85%;
+    box-shadow: 0px 0px 5px #fff;
+    border-radius: 50%;
+    display: none;
+}

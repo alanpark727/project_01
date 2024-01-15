@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/* 카테고리 섹션 파트 CSS */
+
+/* 카테고리 섹션 */
+#section_1 {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.categories>img {
+    max-width: 30px;
+    position: relative;
+    top: 10px;
+}
+
+.categories {
+    color: #82779a;
+    font-size: 18px;
+    text-shadow: 0 0 2px #333;
+    font-family: "BMJUA";
+    float: left;
+    position: absolute;
+    top: 900px;
+    width: 1200px;
+}
+
+/* 카테고리 메인제목 */
+.cate_title {
+    font-family: 'GmarketSansMedium';
+    font-size: 44px;
+    position: relative;
+    top: 95px;
+    left: 0px;
+    text-align: left;
+    max-width: fit-content;
+    width: 60%;
+}
+
+/* 화살표 버튼 */
+.arrow img {
+    max-width: 40px;
+    position: relative;
+    top: 110px;
+    left: 590px;
+    margin: 0 5px;
+}
+
+/* 카테고리 아이콘 */
+.cate_icon {
+    width: 1200px;
+    height: 200px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+.cate_icon ul {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 20px;
+}
+
+.cate_icon ul li {
+    width: 13%;
+    padding: 25px 0px;
+    box-shadow: 5px 5px 15px #888,
+        0px 0px 10px #eee;
+    background-color: white;
+    font-family: 'NanumSquareRound';
+}
+
+.cate_icon img {
+    max-width: 90px;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    padding: 0 5px;
+}
