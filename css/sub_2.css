@@ -500,6 +500,10 @@ section {
     left: 15px;
 }
 
+.inform_table tr td a {
+    color: #eee;
+}
+
 .inform_table tr td #sub_2nd {
     position: relative;
     top: -50px;
